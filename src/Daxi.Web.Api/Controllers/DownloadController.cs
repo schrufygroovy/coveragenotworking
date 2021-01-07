@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Mime;
 using System.Threading;
-using System.Threading.Tasks;
 using Daxi.Libraries.MemoryStreamer;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,7 +16,7 @@ namespace Daxi.Web.Api.Controllers
         /// Download a rikimaru to single json file.
         /// </summary>
         [HttpGet("rikimaru")]
-        public async Task<IActionResult> DownloadRikimaru(
+        public IActionResult DownloadRikimaru(
             CancellationToken cancellationToken,
             [FromQuery] Guid rikimaruId,
             bool formattingIndented = true)
@@ -36,7 +35,7 @@ namespace Daxi.Web.Api.Controllers
         }
 
         [HttpGet("rikimarus")]
-        public async Task<IActionResult> DownloadRikimarus(
+        public IActionResult DownloadRikimarus(
             CancellationToken cancellationToken,
             [FromQuery] Guid[] rikimaruIds,
             bool formattingIndented = true)
