@@ -13,4 +13,4 @@ The output looks like this then:
 
 ![screenshot of console](./output.png)
 
-The controllers of the API are using a net standard library project. That library is part of the solution. Still the coverage of that library is 0 %. Why the hell? When I debug the tests I see that the library code is reached.
+The controllers of the API are using a net standard library project. That library is part of the solution. Still the coverage of that library is 0 %. Why? When I debug the tests I see that the library code is reached. Also the controllers line that is accessing the library is marked as `covered`.
