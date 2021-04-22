@@ -1,5 +1,7 @@
 # About
 
+https://github.com/coverlet-coverage/coverlet/issues/1034
+
 For some unknown reason, the coverage is 0 % for my library project `Daxi.Libraries.MemoryStreamer` even though I know it IS hit by the tests.
 
 ## Calculating coverage
